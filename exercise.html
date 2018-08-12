@@ -100,7 +100,7 @@
 
 			// Create lessonsArray and questionsArray from JSON
 
-			$.getJSON("dataFile", function(data) {
+			$.getJSON(dataFile, function(data) {
 				for (i in data.lessons) {
 					lessonsArray.push(data.lessons[i]);
 				}
