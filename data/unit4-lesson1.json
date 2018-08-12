@@ -1,0 +1,126 @@
+{
+	"questions": [
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "لآ",
+					"correctAnswer": ["لآ لأَ"]
+				}
+			],
+			"options": ["لأَلإِ", "لأُ لإِ", "لآ لأَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the words containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "لإِ",
+					"correctAnswer": ["لإِلآ","لإِلآ"]
+				}
+			],
+			"options": ["لأُلآ","لإِلآ", "لإِلآ", "لأَلأَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the syllables you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "Zur.mp3",
+					"correctAnswer": ["لأَ", "لأَ"]
+				}
+			],
+			"options": ["لأَ", "لآ","لأُ", "لأَ"],
+			"repetitions": 1
+		},
+		{
+			"exercise": "tap-pairs",
+			"questionType": "checkbox",
+			"instruction": "Match the word with its initial syllable:",
+			"questionSet": [
+				{
+					"stimulus": "",
+					"correctAnswer": ["لإِ", "لإِلآ"]
+				},
+				{
+					"stimulus": "",
+					"correctAnswer": ["لآ", "لآلإِ"]
+				}
+			],
+			"options": ["لآ", "لإِلآ", "لإِ", "لآلإِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the syllables you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "Zed.mp3",
+					"correctAnswer": ["لأَ", "لأُ"]
+				}
+			],
+			"options": ["لإِ", "لآ", "لأُ", "لأَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The syllable you hear is: <span class='ar-text'>لآ</span>",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "Rad.mp3",
+					"correctAnswer": ["False"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "Wed.mp3",
+					"correctAnswer": ["لأَ"]
+				}
+			],
+			"options": ["لأَ", "لآ", "لإِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times you hear the syllable: <span class='ar-text'>لأَ</span>",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "RasolRuzJamal.mp3",
+					"correctAnswer": ["2 times"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "Waz.mp3",
+					"correctAnswer": ["لإِلآ"]
+				}
+			],
+			"options": ["لإِلآ", "لأَلأُ", "لأُلآ"],
+			"repetitions": 1
+		}
+
+	]
+}

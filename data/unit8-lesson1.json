@@ -1,0 +1,54 @@
+{
+	"questions": [
+		{
+			"exercise": "select-word-from-sentence",
+			"questionType": "radio",
+			"instruction": "Select the correct form to fill the gap:",
+			"questionSet": [
+				{
+					"stimulus": "ـبتا◌",
+					"correctAnswer": ["سـ"]
+				},
+				{
+					"stimulus": "ـترن◌",
+					"correctAnswer": ["سـ"]
+				},
+				{
+					"stimulus": "ر◌ـت",
+					"correctAnswer": ["سـ"]
+				},
+				{
+					"stimulus": "ا◌ـمي",
+					"correctAnswer": ["سـ"]
+				},
+				{
+					"stimulus": "بـ◌ـل",
+					"correctAnswer": ["ـسـ"]
+				},
+				{
+					"stimulus": "كـ◌ـح",
+					"correctAnswer": ["ـسـ"]
+				},
+				{
+					"stimulus": "◌مومـ",
+					"correctAnswer": ["ـس"]
+				},
+				{
+					"stimulus": "◌صفيـ",
+					"correctAnswer": ["ـس"]
+				},
+				{
+					"stimulus": "◌أر",
+					"correctAnswer": ["س"]
+				},
+				{
+					"stimulus": "◌لد",
+					"correctAnswer": ["س"]
+				}
+			],
+			"options": ["س", "سـ", "ـسـ", "ـس"],
+			"repetitions": 12
+		}
+
+	]
+}

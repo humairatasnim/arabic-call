@@ -1,0 +1,18 @@
+{
+	"lessons": [
+		{
+			"lessonTitle": "Introduction",
+			"lessonText": ["Arabic is written from right to left.", "Arabic is a cursive script: characters are typically connected. However, a few characters do not connect to the left.", "The shape of the characters depends on their position within a word.", "Arabic has 28 characters, which are all considered consonants. However, 3 of them are also used as vowels.", "Arabic has 3 vowels: a, i, u, which can be either long or short. Short vowels are indicated only in the form of markings above or below the preceding consonant."],
+			"audioSet": [
+			],
+			"lessonNotes": []
+		},
+		{
+			"lessonTitle": "What You Will Learn",
+			"lessonText": ["1. All characters of the Arabic alphabet.", "2. Different shapes of the characters.", "3. Annotations indicating short vowels and variations in pronunciation.", "4. Pronunciation of the characters and entire words.", "5. Typing in Arabic"],
+			"audioSet": [
+			],
+			"lessonNotes": ["By the end of the course, you will be able to read Arabic even when you don't know the meaning of the words. You will also learn how to pronounce Arabic words and be able to type in Arabic."]
+		}
+	]
+}

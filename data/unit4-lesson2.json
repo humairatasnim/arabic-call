@@ -1,0 +1,88 @@
+{
+	"lessons": [
+		{
+			"lessonTitle": "Introduction",
+			"lessonText": ["Connecting characters are those, which can connect to both sides.", "Let's look at the letter meem <span class='ar-text'>م</span>. It has different forms:"],
+			"lessonNotes": ["<span class='ar-text'>م</span> - not connecting to other characters. This is called the independent form.", "<span class='ar-text'>مـ</span> - connecting to the next character. This is called the initial form.", "<span class='ar-text'>ـمـ</span> - connecting on both sides. This is called the middle form.", "<span class='ar-text'>ـم</span> - connecting to the previous character. This is called the final form."]
+		},
+		{
+			"lessonTitle": "Watch out!",
+			"lessonText": ["Initial form does not mean that it can only occur at the beginning of a word. Look at: <br><span class='ar-text'>رمد</span>", "After a non-connecting character the initial form is used."],
+			"lessonNotes": ["Similarly, the independent form can occur at the end of a word. For example: <br><span class='ar-text'>مدم</span>", "Time for some practice!"]
+		}
+	],
+	"questions": [
+		{
+			"questionType": "radio",
+			"instruction": "Match the correct form:",
+			"questionSet": [
+				{
+					"stimulus": "مـ",
+					"correctAnswer": ["مـ"]
+				},
+				{
+					"stimulus": "ـمـ",
+					"correctAnswer": ["ـمـ"]
+				},
+				{
+					"stimulus": "ـم",
+					"correctAnswer": ["ـم"]
+				},
+				{
+					"stimulus": "م",
+					"correctAnswer": ["م"]
+				}
+			],
+			"options": ["مـ", "ـمـ", "ـم", "م"],
+			"repetitions": 8
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the correct form:",
+			"questionSet": [
+				{
+					"stimulus": "initial",
+					"correctAnswer": ["مـ"]
+				},
+				{
+					"stimulus": "middle",
+					"correctAnswer": ["ـمـ"]
+				},
+				{
+					"stimulus": "final",
+					"correctAnswer": ["ـم"]
+				},
+				{
+					"stimulus": "independent",
+					"correctAnswer": ["م"]
+				}
+			],
+			"options": ["مـ", "ـمـ", "ـم", "م"],
+			"repetitions": 8
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Find all occurences:",
+			"questionSet": [
+				{
+					"stimulus": "م",
+					"correctAnswer": ["دم"]
+				},
+				{
+					"stimulus": "ـمـ",
+					"correctAnswer": ["ممر"]
+				},
+				{
+					"stimulus": "مـ",
+					"correctAnswer": ["ماد", "ممر", "ومر", "ذمم"]
+				},
+				{
+					"stimulus": "ـم",
+					"correctAnswer": ["ذمم"]
+				}
+			],
+			"options": ["دم", "ماد", "ممر", "ومر", "ذمم"],
+			"repetitions": 8
+		}
+	]
+}

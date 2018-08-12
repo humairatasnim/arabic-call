@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aiwa - Learn the Arabic Script</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body class="exercise">
+	
+	<div class="card lesson-screen">
+		<div class="card-header">
+			<div class="row">
+				<div class="col-1">
+					<a href="lessons.html" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				</div>
+				<div class="col-11">
+				</div>
+			</div>
+		</div>	
+		<div class="card-body">
+			<h5 class="card-title lesson-title"></h5>
+			<div class="lesson-text"></div>
+			<div class="audio-set"></div>
+			<div class="lesson-notes"></div>
+			<button type="button" class="lesson-continue-btn btn btn-lg btn-block">Continue</button>
+		</div>
+	</div>
+
+	<div class="card exercise-screen">		
+		<div class="card-header">
+			<div class="row">
+				<div class="col-1">
+					<a href="lessons.html" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				</div>
+				<div class="col-11 progress-section">
+					<span class="question-count"></span>
+					<span class="score-card"></span>
+					<div class="progress"></div>
+				</div>
+			</div>
+		</div>
+		<div class="card-body">
+			<h5 class="card-title instruction"></h5>
+			<div class="stimulus"></div>
+			<div class="options"></div>
+			<button type="button" class="exercise-check-btn btn btn-lg btn-block" disabled>Check</button>
+			<button type="button" class="exercise-continue-btn btn btn-lg btn-block">Continue</button>
+		</div>
+	</div>
+
+	<div class="card final-screen text-center">
+		<div class="card-header">
+			<div class="row">
+				<div class="col-1">
+					<a href="lessons.html" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+				</div>
+				<div class="col-11">
+				</div>
+			</div>
+		</div>
+		<div class="card-body">
+			<h1 class="trophy"></h1>
+			<h5 class="card-title"></h5>
+			<div class="stats">
+				<h1 class="score"></h1>
+				<div class="score-description"></div>
+			</div>
+			<button type="button" class="startover-btn btn btn-lg btn-block">Start Over</button>
+			<a href="lessons.html" class="goback-btn btn btn-lg btn-block">Go Back</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var lessonsArray = [];
+			var lessonCounter = 0;
+			var questionsArray = [];			
+			var questionCounter = 0;
+			var numQuestions = 0;
+			var score = 0;
+
+			// Retrieve JSON based on URL variable
+			
+			var dataFile = "data/" + getQueryVariable("id") + ".json";
+
+			function getQueryVariable(variable)
+			{
+				var query = window.location.search.substring(1);
+				var vars = query.split("&");
+				for (i in vars) {
+					var pair = vars[i].split("=");
+					if (pair[0] == variable) { return pair[1]; }
+				}
+				return(false);
+			}
+
+			// Create lessonsArray and questionsArray from JSON
+
+			$.getJSON("dataFile", function(data) {
+				for (i in data.lessons) {
+					lessonsArray.push(data.lessons[i]);
+				}
+				for (i in data.questions) {
+					for (j = 0; j < data.questions[i].repetitions; j++) {
+						questionsArray.push(data.questions[i]);
+					}
+				}
+				numQuestions = questionsArray.length;
+				if (lessonsArray.length > 0) {
+					renderLesson();
+				}
+				else {
+					renderExercise();
+				}
+			})
+
+			// Render lesson interface
+
+			function renderLesson() {
+				$('.lesson-screen').fadeIn();
+				$('.lesson-screen .lesson-title').html(lessonsArray[lessonCounter].lessonTitle);
+
+				for (i in lessonsArray[lessonCounter].lessonText) {
+					lessontexthtml = `<p>${lessonsArray[lessonCounter].lessonText[i]}</p>`
+					$(lessontexthtml).appendTo('.lesson-screen .lesson-text');
+				}
+
+				for (i in lessonsArray[lessonCounter].audioSet) {
+					audiohtml = `<button onclick="document.getElementById('${lessonsArray[lessonCounter].audioSet[i].fileName}').play();" class="play-sound-btn btn"><span class="ar-text">${lessonsArray[lessonCounter].audioSet[i].displayText}</span></button><audio id="${lessonsArray[lessonCounter].audioSet[i].fileName}" src="assets/${lessonsArray[lessonCounter].audioSet[i].fileName}" preload="auto"></audio>`;
+					$(audiohtml).appendTo('.lesson-screen .audio-set');
+				}
+
+				for (i in lessonsArray[lessonCounter].lessonNotes) {
+					lessonnoteshtml = `<p>${lessonsArray[lessonCounter].lessonNotes[i]}</p>`
+					$(lessonnoteshtml).appendTo('.lesson-screen .lesson-notes');
+				}
+			}
+
+			// Continue to next lesson
+
+			function handleLessonContinue() {
+				$('.lesson-continue-btn').on('click', function(event) {
+					console.log("handleLessonContinue() ran");
+					$('.lesson-screen').hide();
+					$('.lesson-screen .lesson-text').empty();
+					$('.lesson-screen .audio-set').empty();
+					$('.lesson-screen .lesson-notes').empty();
+					lessonCounter++;
+					if (lessonCounter < lessonsArray.length) {
+						$('.lesson-screen').fadeIn();
+						renderLesson();
+					}
+					else {
+						if (numQuestions !== 0) {
+							renderExercise();
+						}
+						else {
+							displayResults();
+						}
+					}
+				});
+			}
+
+			// Render exercise interface
+
+			function renderExercise() {
+				$('.exercise-screen').fadeIn();
+				renderQuestionCount();
+				renderQuestion();
+				renderScore();
+			}
+
+			// Render exercise progress
+
+			function renderQuestionCount() {
+				$('.progress-section .question-count').text(`Question ${questionCounter+1} of ${numQuestions}`);
+
+				$('.progress-section .progress').html(`<div class="progress-bar" role="progressbar" style="width: ${(questionCounter+1)/numQuestions*100}%" aria-valuenow="${(questionCounter+1)/numQuestions*100}" aria-valuemin="0" aria-valuemax="100"></div>`);
+			}
+
+			// Render question with options
+
+			var randomStimulus = "";
+
+			function renderQuestion() {
+				$('.exercise-check-btn').show();
+				$('.exercise-check-btn').prop('disabled', true);
+				$('.exercise-continue-btn').hide();
+				
+				$('.exercise-screen .instruction').html(questionsArray[questionCounter].instruction);
+
+				if (questionsArray[questionCounter].exercise === "tap-pairs") {
+
+					colhtml = `<div class="row"><div class="col-6 col-left"></div><div class="col-6 col-right"></div></div>`;
+
+					$(colhtml).appendTo('.exercise-screen .options');								
+					
+					for (i in questionsArray[questionCounter].options) {
+						for (j in questionsArray[questionCounter].questionSet) {
+
+							inputhtml = `<input type='${questionsArray[questionCounter].questionType}' name='question-${questionCounter}' id='option-${i}' value='${questionsArray[questionCounter].options[i]}' class="js-tap-answer"> <label for='option-${i}' class="btn"><span>${questionsArray[questionCounter].options[i]}</span></label>`;
+
+							a = questionsArray[questionCounter].questionSet[j].correctAnswer;
+							b = questionsArray[questionCounter].options[i];
+
+							if (a.indexOf(b) === 0) {
+								$(inputhtml).appendTo('.exercise-screen .options .col-left');
+							}
+							else if (a.indexOf(b) === 1) {
+								$(inputhtml).appendTo('.exercise-screen .options .col-right');
+							}
+						}
+					}
+				}
+
+				else if (questionsArray[questionCounter].exercise === "select-word-from-sentence") {
+					for (i in questionsArray[questionCounter].options) {
+
+						inputhtml = `<input type='${questionsArray[questionCounter].questionType}' name='question-${questionCounter}' id='option-${i}' value='${questionsArray[questionCounter].options[i]}' class="js-tap-answer"> <label for='option-${i}' class='btn' style='display: inline-block; width:auto;'><span>${questionsArray[questionCounter].options[i]}</span></label>`;
+						$(inputhtml).appendTo('.exercise-screen .options');
+					}
+				}
+
+				else {
+					shuffle(questionsArray[questionCounter].options);
+
+					var col = 12/questionsArray[questionCounter].options.length;
+					if (questionsArray[questionCounter].options.length > 4) {
+						col = 4;
+					}
+
+					inputhtml = "";
+
+					for (i in questionsArray[questionCounter].options) {
+						inputhtml += `<div class="col-${col}"><input type='${questionsArray[questionCounter].questionType}' name='question-${questionCounter}' id='option-${i}' value='${questionsArray[questionCounter].options[i]}' class="js-tap-answer"> <label for='option-${i}' class="btn"><span>${questionsArray[questionCounter].options[i]}</span></label></div>`;
+
+						if ((questionsArray[questionCounter].options.length > 4 && i > 0 && i % 2 == 0) || i == questionsArray[questionCounter].options.length - 1) {
+							inputhtml = '<div class="row justify-content-center">' + inputhtml + '</div>';
+							$(inputhtml).appendTo('.exercise-screen .options');
+							inputhtml = "";
+						}
+					}		
+				}
+
+				if (questionsArray[questionCounter].optionsLanguage !== "en") {
+					$('.exercise-screen .options span').addClass("ar-text");
+				}
+
+				if (questionsArray[questionCounter].exercise !== "tap-pairs") {
+					randomStimulus = questionsArray[questionCounter].questionSet[Math.floor(Math.random() * questionsArray[questionCounter].questionSet.length)].stimulus;
+					if (questionsArray[questionCounter].stimulusType === "audio") {
+						audioStimulus = `<button onclick="document.getElementById('${randomStimulus}').play();" class="play-sound-btn btn"><i class="fa fa-volume-down" aria-hidden="true"></i></button><audio id="${randomStimulus}" src="assets/${randomStimulus}" preload="auto"></audio>`;
+						$('.exercise-screen .stimulus').html(audioStimulus);
+					}
+					else {
+						$('.exercise-screen .stimulus').html(randomStimulus);
+					}
+					
+				}
+				else {
+					$('.exercise-screen .stimulus').html("");
+					$('.exercise-check-btn').hide();
+					handleTapPairs();
+				}
+
+				handleSelectAnswer();
+			}
+
+			// Render exercise score
+
+			function renderScore() {
+				$('.progress-section .score-card').text(`Score: ${score}/${numQuestions}`);
+			}
+
+			// Return options in random sequence
+
+			function shuffle(arr) {
+				for (var i = arr.length - 1; i > 0; i--) {
+					const j = Math.floor(Math.random() * (i + 1));
+					[arr[i], arr[j]] = [arr[j], arr[i]];
+				}
+				return arr;
+			}
+
+			// Tap pairs question handling
+
+			var tapCount = 0;
+			var tapCorrectCount = 0;
+
+			function handleTapPairs() {
+				$('.js-tap-answer').on('click', function(event) {
+					console.log("handleTapPairs() ran");
+					tapCount++;
+
+					if (tapCount === 2) {
+						var selectedPairs = getCheckedValue(`question-${questionCounter}`);
+						if (checkPairs(selectedPairs)){
+							tapCorrectCount += 2;
+							var inputItems = document.getElementsByName(`question-${questionCounter}`);
+							for (i in inputItems) {
+								if (selectedPairs.includes(inputItems[i].value)) {
+									inputItems[i].checked = false;
+									inputItems[i].disabled = true;
+									inputItems[i].classList.add("correct-answer");
+								}
+							}
+						}
+						else {
+							var inputItems = document.getElementsByName(`question-${questionCounter}`);
+							for (i in inputItems) {
+								if (selectedPairs.includes(inputItems[i].value)) {
+									inputItems[i].classList.add("incorrect-pair");
+									inputItems[i].checked = false;
+								}
+							}
+							$('.exercise-continue-btn').show();
+						}
+						tapCount = 0;
+						selectedPairs = [];
+					}
+
+					if (tapCorrectCount == questionsArray[questionCounter].options.length) {
+						score++;
+						displayFeedback(true, "");
+					}
+				});				
+			}
+
+			function checkPairs(selected) {
+				var correctPairs = [];
+				for (i in questionsArray[questionCounter].questionSet) {
+					correctPairs.push(questionsArray[questionCounter].questionSet[i].correctAnswer);
+				}
+
+				for (i in correctPairs) {
+					if (equalArrays(selected, correctPairs[i])){
+						return true;
+					}
+				}
+				return false;		
+			}
+
+			// Enable Check button on answer selected
+
+			function handleSelectAnswer() {
+				$('.js-tap-answer').on('click', function(event) {
+					console.log("handleSelectAnswer() ran");
+					$('.exercise-check-btn').prop('disabled', false);
+				});				
+			}
+
+			// Submit answer
+
+			function handleCheckAnswer(){
+				$('.exercise-check-btn').on('click', function(event) {
+					console.log("handleCheckAnswer() ran");
+					$('.exercise-check-btn').hide();
+					var selectedOptions = getCheckedValue(`question-${questionCounter}`);
+					checkAnswer(selectedOptions);
+				});
+			}
+
+			// Retrieve options checked
+
+			function getCheckedValue(checkboxName) {
+				var checks = document.getElementsByName(checkboxName);
+				var responses = [];
+				for (i in checks) {
+					if (checks[i].checked) {
+						responses.push(checks[i].value);
+					}
+				}
+				return responses;
+			}
+
+			// Retrieve correct answers
+
+			function getCorrectAnswers() {
+				for (i in questionsArray[questionCounter].questionSet) {
+					if (randomStimulus === questionsArray[questionCounter].questionSet[i].stimulus) {
+						return questionsArray[questionCounter].questionSet[i].correctAnswer;
+					}
+				}
+			}
+
+			// Check if options checked are correct
+
+			function checkAnswer(selected){
+				if (equalArrays(selected, getCorrectAnswers())) {
+					score++;
+					displayFeedback(true, getCorrectAnswers());
+				}
+				else {
+					displayFeedback(false, getCorrectAnswers());
+				}
+			}
+
+			// Compare if two arrays contain the same objects
+
+			function equalArrays(arr1, arr2) {
+				if (arr1.length !== arr2.length) {
+					return false;
+				}
+				var arr1 = arr1.sort();
+				var arr2 = arr2.sort();
+				for (var i = arr2.length; i--;) {
+					if (arr1[i] !== arr2[i]) {
+						return false;
+					}
+				}
+				return true;
+			}
+
+			// Display feedback
+
+			function displayFeedback(statusFlag, answer){
+				var inputItems = document.getElementsByName(`question-${questionCounter}`);
+				for (i in inputItems) {
+					inputItems[i].disabled = true;
+					if (!statusFlag) {
+						if (inputItems[i].checked) {
+							inputItems[i].classList.add("incorrect-answer");
+						}
+						if (questionsArray[questionCounter].questionType == 'checkbox' && answer.includes(inputItems[i].value) && !inputItems[i].checked) {
+							inputItems[i].classList.add("missed-answer");
+						}
+					}					
+					if (answer.includes(inputItems[i].value)) {
+						inputItems[i].classList.add("correct-answer");
+					}
+				}
+				$('.exercise-continue-btn').show();
+			}
+
+			// Continue to next question
+
+			function handleExerciseContinue() {
+				$('.exercise-continue-btn').on('click', function(event) {
+					console.log("handleExerciseContinue() ran");
+					$('.exercise-screen').hide();
+					$('.exercise-screen .options').empty();
+					questionCounter++;
+					if (questionCounter < questionsArray.length) {
+						$('.exercise-screen').fadeIn();
+						renderExercise();
+					}
+					else {
+						displayResults();
+					}
+				});
+			}
+
+			// Display final score
+
+			function displayResults() {
+				$('.final-screen').fadeIn();
+				$('.final-screen .trophy').html(`<i class="fa fa-trophy" aria-hidden="true"></i>`);
+				$('.final-screen .card-title').text(`Lesson Completed`);
+				if (numQuestions !== 0) {
+					$('.final-screen .score').text(`${Math.round(score/numQuestions*100)}%`);
+					$('.final-screen .score-description').text(`You answered ${score} out of ${numQuestions} questions correctly.`);
+				}
+				resetExercise();
+			}
+
+			// Reset quiz and start over
+
+			function resetExercise() {
+				questionCounter = 0;
+				lessonCounter = 0;
+				score = 0;
+			}
+
+			function handleStartOver() {
+				$('.startover-btn').on('click', function(event) {
+					console.log("handleStartOver() ran");
+					$('.final-screen').hide();
+					$('.lesson-screen').fadeIn();
+					renderLesson();
+				});
+			}
+
+			// Initialization
+
+			function init() {
+				$('.lesson-screen').hide();
+				$('.exercise-screen').hide();
+				$('.final-screen').hide();
+				handleLessonContinue();
+				handleCheckAnswer();
+				handleExerciseContinue();
+				handleStartOver();
+			}
+			
+			$(init());
+
+		});
+	</script>
+</body>
+</html>

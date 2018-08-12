@@ -1,0 +1,143 @@
+{
+	"questions": [
+
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "رَ",
+					"correctAnswer": ["رِرَ"]
+				}
+			],
+			"options": ["رِرَ", "رُرُ", "رِرِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times <span class='ar-text'>رِ</span> appears in the sequence of letters below:",
+			"questionSet": [
+				{
+					"stimulus": "رَ   رَ  رِ",
+					"correctAnswer": ["1 time"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the words containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "رُ",
+					"correctAnswer": ["رُرِ", "رُرِ","رَرُ"]
+				}
+			],
+			"options": ["رُرِ", "رَرَ", "رُرِ", "رَرُ"],
+			"repetitions": 1
+		},
+		
+		{
+			"exercise": "tap-pairs",
+			"questionType": "checkbox",
+			"instruction": "Match the word with its initial syllable:",
+			"questionSet": [
+				{
+					"stimulus": "",
+					"correctAnswer": ["رُ", "رُرُ"]
+				},
+				{
+					"stimulus": "",
+					"correctAnswer": ["رَ", "رَرِ"]
+				}
+			],
+			"options": ["رُ", "رُرُ","رَ", "رَرِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times you hear the syllable <span class='ar-text'>رُ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ruriru.mp3",
+					"correctAnswer": ["2 times"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ra.mp3'",
+					"correctAnswer": ["رَ"]
+				}
+			],
+			"options": ["رِ", "رُ","رَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The syllable you hear is <span class='ar-text'>رَ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ru.mp3",
+					"correctAnswer": ["False"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ra.mp3",
+					"correctAnswer": ["رَرِ"]
+				}
+			],
+			"options": ["رَرِ", "رُرِ","رُرُ"],
+			"repetitions": 1
+		},
+
+		{
+			"questionType": "radio",
+			"instruction": "Select the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ru.mp3>",
+					"correctAnswer": ["رُ"]
+				}
+			],
+			"options": ["رِ", "رَ","رُ"],
+			"repetitions": 1
+		},
+
+
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the sequences of syllables containing the letter you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "ri.mp3>",
+					"correctAnswer": ["رِرَ", "رُرِ"]
+				}
+			],
+			"options": ["رِرَ", "رُرِ", "رَرَ"],
+			"repetitions": 1
+		}
+	]
+}

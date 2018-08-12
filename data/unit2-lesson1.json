@@ -1,0 +1,142 @@
+{
+	"lessons": [
+		{
+			"lessonTitle": "Our first character (wāw): <span class='ar-text'>و</span>",
+			"lessonText": ["Tap on the syllables to hear how they sound and notice the difference:"],
+			"audioSet": [
+				{
+					"displayText": "وَ",
+					"fileName": "wawwithfatha.mp3"
+				},
+				{
+					"displayText": "وِ",
+					"fileName": "wawwithkasra.mp3"
+				}
+			],
+			"lessonNotes": ["َ sitting on top of the character indicates the short vowel 'a'.", "ِ sitting below the character indicates the short vowel 'i'."]
+		}
+	],
+	"questions": [
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "وَ",
+					"correctAnswer": ["وَوِ"]
+				}
+			],
+			"options": ["وِوِ", "وَوِ", "وِوِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times <span class='ar-text'>وَ</span> appears in the sequence of letters below:",
+			"questionSet": [
+				{
+					"stimulus": "وَ وِ وِ",
+					"correctAnswer": ["1 time"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the words containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "وِ",
+					"correctAnswer": ["وَوِ", "وِوَ"]
+				}
+			],
+			"options": ["وَوَ", "وَوَ", "وَوِ", "وِوَ"],
+			"repetitions": 1
+		},
+		{
+			"exercise": "tap-pairs",
+			"questionType": "checkbox",
+			"instruction": "Match the word with its initial syllable:",
+			"questionSet": [
+				{
+					"stimulus": "",
+					"correctAnswer": ["وَ", "وَوِ"]
+				},
+				{
+					"stimulus": "",
+					"correctAnswer": ["وِ", "وِوَ"]
+				}
+			],
+			"options": ["وَ", "وِوَ", "وِ", "وَوِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times you hear the syllable <span class='ar-text'>وِ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "WiWaWa.mp3",
+					"correctAnswer": ["1 time"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "wa.mp3",
+					"correctAnswer": ["وَ"]
+				}
+			],
+			"options": ["وِ", "وَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The syllable you hear is <span class='ar-text'>وَ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "wa.mp3",
+					"correctAnswer": ["True"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "wa.mp3",
+					"correctAnswer": ["وَوَ"]
+				}
+			],
+			"options": ["وَوَ", "وِوِ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the sequence of syllables containing the letter you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "wi.mp3",
+					"correctAnswer": ["وِوِ"]
+				}
+			],
+			"options": ["وَوَ", "وَوَ", "وِوِ"],
+			"repetitions": 1
+		}
+	]
+}

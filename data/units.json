@@ -1,0 +1,342 @@
+{
+	"units": [
+		{
+			"unitNumber": 1,
+			"unitTitle": "Introduction",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "Introduction",
+					"available": true
+				}
+			]
+		},
+		{
+			"unitNumber": 2,
+			"unitTitle": "Isolated Characters",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "وَ وِ",
+					"available": true
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "زَ زِ",
+					"available": true
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "وُ زُ",
+					"available": true
+				},
+				{
+					"lessonNumber": 5,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 6,
+					"lessonTitle": "رَ رِ رُ",
+					"available": true
+				},
+				{
+					"lessonNumber": 7,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 8,
+					"lessonTitle": "دَ دِ دُ",
+					"available": true
+				},
+				{
+					"lessonNumber": 9,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 10,
+					"lessonTitle": "وْ زْ رْ دْ"
+				},
+				{
+					"lessonNumber": 11,
+					"lessonTitle": "Read",
+					"available": true
+				},
+				{
+					"lessonNumber": 12,
+					"lessonTitle": "ذَ ذِ ذُ ذْ"
+				},
+				{
+					"lessonNumber": 13,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 3,
+			"unitTitle": "Special Characters",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "أَ إِ أُ أْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "لَ لِ لُ لْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 4,
+			"unitTitle": "Connected Characters (without dots)",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "لأَ لإِ لأُ لآ",
+					"available": true
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "مَ مِ مُ مْ",
+					"available": true
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 5,
+			"unitTitle": "The Baa & Naa Groups",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "يَ يِ يُ يْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "تَ تِ تُ تْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 5,
+					"lessonTitle": "نَ نِ نُ نْ"
+				},
+				{
+					"lessonNumber": 6,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 7,
+					"lessonTitle": "ثَ ثِ ثُ ثْ"
+				},
+				{
+					"lessonNumber": 8,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 9,
+					"lessonTitle": "بَ بِ بُ بْ"
+				},
+				{
+					"lessonNumber": 10,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 6,
+			"unitTitle": "Ayn Plus Some Group",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "عَ عِ عُ عْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "غَ غِ غُ غْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 5,
+					"lessonTitle": "هَ هِ هُ هْ"
+				},
+				{
+					"lessonNumber": 6,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 7,
+					"lessonTitle": "فَ فِ فُ فْ"
+				},
+				{
+					"lessonNumber": 8,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 9,
+					"lessonTitle": "قَ قِ قُ قْ"
+				},
+				{
+					"lessonNumber": 10,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 11,
+					"lessonTitle": "كَ كِ كُ كْ"
+				},
+				{
+					"lessonNumber": 12,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 7,
+			"unitTitle": "Ha Group",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "حَ حِ حُ حْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "جَ جِ جُ جْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 5,
+					"lessonTitle": "خَ خِ خٌ خْ"
+				},
+				{
+					"lessonNumber": 6,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 8,
+			"unitTitle": "Seen Group",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "سَ سِ سُ سْ",
+					"available": true
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "شَ شِ شُ شْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 9,
+			"unitTitle": "Sad Group",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "صَ صِ صُ صْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "ضَ ضِ ضُ ضْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 10,
+			"unitTitle": "Taa Group",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "طَ طِ طُ طْ"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Read"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "ظَ ظِ ظٌ ظْ"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Read"
+				}
+			]
+		},
+		{
+			"unitNumber": 11,
+			"unitTitle": "More Reading",
+			"lessons": [
+				{
+					"lessonNumber": 1,
+					"lessonTitle": "Sentences"
+				},
+				{
+					"lessonNumber": 2,
+					"lessonTitle": "Conversations"
+				},
+				{
+					"lessonNumber": 3,
+					"lessonTitle": "Paragraphs"
+				},
+				{
+					"lessonNumber": 4,
+					"lessonTitle": "Passages"
+				}
+			]
+		}
+	]
+}
+
+

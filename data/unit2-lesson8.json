@@ -1,0 +1,139 @@
+{
+	"questions": [
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the words containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "دُ",
+					"correctAnswer": ["دُدِ", "دَدُ"]
+				}
+			],
+			"options": ["دَدِ", "دُدِ", "دَدُ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times <span class='ar-text'>دَ</span> appears in the sequence of letters below:",
+			"questionSet": [
+				{
+					"stimulus": "دِ  دَ  دَ",
+					"correctAnswer": ["2 times"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the words containing the syllable:",
+			"questionSet": [
+				{
+					"stimulus": "دِ",
+					"correctAnswer": ["دُدِ"]
+				}
+			],
+			"options": ["دَدُ", "دُدِ", "دَدُ", "دَدُ"],
+			"repetitions": 1
+		},
+		{
+			"exercise": "tap-pairs",
+			"questionType": "checkbox",
+			"instruction": "Match the word with its initial syllable:",
+			"questionSet": [
+				{
+					"stimulus": "",
+					"correctAnswer": ["دِ", "دِدَ"]
+				},
+				{
+					"stimulus": "",
+					"correctAnswer": ["دَ ", "دَدُ "]
+				}
+			],
+			"options": ["دِ", "دِدَ", "دَ ", "دَدُ "],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the number of times you hear the syllable <span class='ar-text'>دَ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "dadida.mp3",
+					"correctAnswer": ["2 times"]
+				}
+			],
+			"options": ["1 time", "2 times", "3 times"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "du.mp3",
+					"correctAnswer": ["دُ"]
+				}
+			],
+			"options": ["دَ", "دِ", "دُ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The syllable you hear is <span class='ar-text'>دَ</span>.",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "da.mp3",
+					"correctAnswer": ["True"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the word containing the syllable you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "du.mp3",
+					"correctAnswer": ["دُدِ"]
+				}
+			],
+			"options": ["دَدَ", "دُدِ", "دِدَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the syllables you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "dudi.mp3",
+					"correctAnswer": ["دُ", "دِ"]
+				}
+			],
+			"options": ["دِ", "دُ", "دَ", "دَ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the sequence of syllables containing the letter you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "di.mp3",
+					"correctAnswer": ["دِ"]
+				}
+			],
+			"options": ["دَدَ", "رَرِ", "دِ"],
+			"repetitions": 1
+		}
+	]
+}
