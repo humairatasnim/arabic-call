@@ -76,7 +76,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "ra.mp3'",
+					"stimulus": "ra.mp3",
 					"correctAnswer": ["رَ"]
 				}
 			],
@@ -117,7 +117,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "ru.mp3>",
+					"stimulus": "ru.mp3",
 					"correctAnswer": ["رُ"]
 				}
 			],
@@ -132,7 +132,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "ri.mp3>",
+					"stimulus": "ri.mp3",
 					"correctAnswer": ["رِرَ", "رُرِ"]
 				}
 			],
