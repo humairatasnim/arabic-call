@@ -1,7 +1,6 @@
 {
 	"questions": [
 		{
-			"exercise": "select-word-from-sentence",
 			"questionType": "radio",
 			"instruction": "Select the correct form to fill the gap:",
 			"questionSet": [
