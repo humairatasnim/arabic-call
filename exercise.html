@@ -209,7 +209,7 @@
 						col = 4;
 					}
 					hasLongString = longString(questionsArray[questionCounter].options);
-					if (hasLongString) {
+					if (hasLongString || window.matchMedia("(max-width: 767.98px)").matches) {
 						col = 12;
 					}
 					inputhtml = "";
