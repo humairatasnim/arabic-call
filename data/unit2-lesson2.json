@@ -109,12 +109,12 @@
 		},
 		{
 			"questionType": "radio",
-			"instruction": "Select the number of times you hear the syllable <span class='ar-text'></span>.",
+			"instruction": "Select the number of times you hear the syllable <span class='ar-text'>زِ</span>.",
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "WiWaWa.mp3",
-					"correctAnswer": ["2 times"]
+					"stimulus": "wawizi.mp3",
+					"correctAnswer": ["1 time"]
 				}
 			],
 			"options": ["1 time", "2 times", "3 times"],
