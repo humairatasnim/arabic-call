@@ -1,8 +1,9 @@
 {
 	"questions": [
 		{
+			"exercise": "Select the word containing the syllable",
 			"questionType": "radio",
-			"instruction": "Select the word containing the syllable:",
+			"instruction": "Select the word from within the syllable:",
 			"questionSet": [
 				{
 					"stimulus": "لآ",
@@ -30,7 +31,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "Zur.mp3",
+					"stimulus": "U4L1Q6_9.mp3",
 					"correctAnswer": ["لأَ", "لأَ"]
 				}
 			],
@@ -55,16 +56,16 @@
 			"repetitions": 1
 		},
 		{
-			"questionType": "checkbox",
+			"questionType": "radio",
 			"instruction": "Select all the syllables you hear:",
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "Zed.mp3",
-					"correctAnswer": ["لأَ", "لأُ"]
+					"stimulus": "U4L1Q10.mp3",
+					"correctAnswer": [ "لأُلآ"]
 				}
 			],
-			"options": ["لإِ", "لآ", "لأُ", "لأَ"],
+			"options": ["لأَلإِ", "لأُلآ", "لإِلآ"],
 			"repetitions": 1
 		},
 		{
@@ -73,7 +74,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "Rad.mp3",
+					"stimulus": "U4L1Q7_8.mp3",
 					"correctAnswer": ["False"]
 				}
 			],
@@ -87,7 +88,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "Wed.mp3",
+					"stimulus": "U4L1Q6_9.mp3",
 					"correctAnswer": ["لأَ"]
 				}
 			],
@@ -100,8 +101,8 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "RasolRuzJamal.mp3",
-					"correctAnswer": ["2 times"]
+					"stimulus": "U4L1Q5.mp3",
+					"correctAnswer": ["3 times"]
 				}
 			],
 			"options": ["1 time", "2 times", "3 times"],
@@ -114,7 +115,7 @@
 			"stimulusType": "audio",
 			"questionSet": [
 				{
-					"stimulus": "Waz.mp3",
+					"stimulus": "U4L1Q7_8.mp3",
 					"correctAnswer": ["لإِلآ"]
 				}
 			],

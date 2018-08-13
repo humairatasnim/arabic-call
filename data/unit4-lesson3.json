@@ -1,0 +1,111 @@
+{
+	"questions": [
+		{
+			"exercise": "Select the same sentence among the list:",
+			"questionType": "radio",
+			"instruction": "Select the same sentence among the list:",
+			"questionSet": [
+				{
+					"stimulus": ".المَوْزُ  مُرْ",
+					"correctAnswer": [".المَوْزُ مُرْ"]
+				}
+			],
+			"options": [".الوَلَدُ مَرْ", ".المَوْزُ مُرْ", ".الوَلَدُ أَمَامَ المَمَرْ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the same sentence among the list:",
+			"questionSet": [
+				{
+					"stimulus": ".الوَالِدُ مَرْ",
+					"correctAnswer": [".الوَالِدُ مَرْ"]
+				}
+			],
+			"options": [".الِوَلدُ مَرْ",".الوَالِدُ مَرْ", ".مَلَآذُ أَمَامَ المَمَرْ", ".مُرَادُ مَرْ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "checkbox",
+			"instruction": "Select all the sentences you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q5.mp3",
+					"correctAnswer": [".الوَلدُ مَرْ", ".المَوْزُ مُرْ"]
+				}
+			],
+			"options": [".الوَلدُ لآزَمَ الأُمْ", ".الوَالِدُ مَرْ",".الوَلدُ مَرْ", ".المَوْزُ مُرْ"],
+			"repetitions": 1
+		},
+		{
+			
+			"questionType": "checkbox",
+			"instruction": "Select all the sentences you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q8.mp3",
+					"correctAnswer": [ ".رُدِمَ المَالْ",".دَامَ الأَلَمْ"]
+				}
+			],
+			"options": [".زَادَ المَالْ",".أَمَلُ أمَامَ الوُروْد", ".دَامَ الأَلَمْ", ".رُدِمَ المَالْ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The sentence you hear is: <span class='ar-text'>مُرادْ مَر</span>",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q6.mp3",
+					"correctAnswer": ["True"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the sentence you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q7.mp3",
+					"correctAnswer": [".دَامَ الأَلَمْ"]
+				}
+			],
+			"options": [".دَامَ الأَلَمْ", ".رُدِمَ دَمْ الأُمْ", ".رَدَمَ المَالُ رَمْلْ"],
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "The sentence you hear is: <span class='ar-text'>زَارَ الوَلَدُ الأُمْ</span>",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q9.mp3",
+					"correctAnswer": ["False"]
+				}
+			],
+			"options": ["True", "False"],
+			"optionsLanguage": "en",
+			"repetitions": 1
+		},
+		{
+			"questionType": "radio",
+			"instruction": "Select the sentence you hear:",
+			"stimulusType": "audio",
+			"questionSet": [
+				{
+					"stimulus": "U4L3Q10.mp3",
+					"correctAnswer": [".المَوْلُودُ أمَلُ الأُمْ"]
+				}
+			],
+			"options": [".زَادَ أَمَلُ الأُمْ", ".المَوْلُودُ أمَلُ الأُمْ", ".المَوْلُودُ أَمَلْ"],
+			"repetitions": 1
+		}
+
+	]
+}

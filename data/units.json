@@ -113,7 +113,8 @@
 				},
 				{
 					"lessonNumber": 3,
-					"lessonTitle": "Read"
+					"lessonTitle": "Read",
+					"available": true
 				}
 			]
 		},

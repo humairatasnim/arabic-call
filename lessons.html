@@ -3,8 +3,8 @@
 <head>
 	<title>Aiwa - Learn the Arabic Script</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <body class="lessons">
@@ -29,17 +29,14 @@
 			function renderUnits() {
 				for (i in unitsArray) {
 					unithtml = `<div class="unit-bar alert alert-secondary">Unit ${unitsArray[i].unitNumber} - ${unitsArray[i].unitTitle}</div>`;
-
 					$(unithtml).appendTo('.container');
-
 					var lessonhtml = "";
-
 					for (j in unitsArray[i].lessons) {
 						if (unitsArray[i].lessons[j].available) {
-							lessonhtml += `<div class="col-6 col-md-3"><a href="exercise.html?id=unit${unitsArray[i].unitNumber}-lesson${unitsArray[i].lessons[j].lessonNumber}" class="card-link text-center"><div class="card"><div class="card-body"><h6 class="card-subtitle mb-2 text-muted">Lesson ${unitsArray[i].lessons[j].lessonNumber}</h6><h5 class="card-title">${unitsArray[i].lessons[j].lessonTitle}</h5></div></div></a></div>`;
+							lessonhtml += `<div class="col-6 col-md-3"><a href="exercise.html?id=unit${unitsArray[i].unitNumber}-lesson${unitsArray[i].lessons[j].lessonNumber}" class="card-link text-center"><div class="card"><div class="card-body"><h6 class="card-subtitle mb-2 text-muted">Lesson ${unitsArray[i].lessons[j].lessonNumber}</h6><h5 class="card-title">${unitsArray[i].lessons[j].lessonTitle}</h5><p class="card-text"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></p></div></div></a></div>`;
 						}
 						else {
-							lessonhtml += `<div class="col-6 col-md-3"><a class="disabled card-link text-center"><div class="card"><div class="card-body"><h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-lock" aria-hidden="true"></i> Lesson ${unitsArray[i].lessons[j].lessonNumber}</h6><h5 class="card-title">${unitsArray[i].lessons[j].lessonTitle}</h5></div></div></a></div>`;
+							lessonhtml += `<div class="col-6 col-md-3"><a class="disabled card-link text-center"><div class="card"><div class="card-body"><h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-lock" aria-hidden="true"></i> Lesson ${unitsArray[i].lessons[j].lessonNumber}</h6><h5 class="card-title">${unitsArray[i].lessons[j].lessonTitle}</h5><p class="card-text"><i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></p></div></div></a></div>`;
 						}
 					}
 					lessonhtml = "<div class='row'>" + lessonhtml + "</div>";

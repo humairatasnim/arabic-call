@@ -1,11 +1,11 @@
 /* Splash screen */
 
 .jumbotron {
-    height: 100vh;
-    margin: 0;
-    padding-top: 10rem;
-    background-color: #fda94f;
-    color: #ffffff;
+	height: 100vh;
+	margin: 0;
+	padding-top: 10rem;
+	background-color: #fda94f;
+	color: #ffffff;
 }
 
 .jumbotron .btn {
@@ -34,7 +34,7 @@
 	background-color: #F9F9F9;
 }
 
-/* Units screen */
+/* Lessons screen */
 
 .lessons .unit-bar {
 	margin-top: 30px;
@@ -45,18 +45,27 @@
 	margin-bottom: 20px;
 }
 
-/* Lesson screen */
-
-.audio-set {
-	text-align: center;
+.lessons .card-text {
+	color: #fda94f;
 }
 
-.audio-set .play-sound-btn {
-	margin: 20px 10px;
-	padding: 1rem 2rem;
-	color: #fff;
-	background-color: #6e5bba;
-	border-color: #6e5bba;
+.lessons .card-link {
+	color: #000;
+}
+
+.lessons .card-link:hover .card {
+	border-color: #fda94f;
+	color: #000;
+}
+
+.lessons .disabled .card {
+	background-color: #c7c9cd;
+}
+
+.lessons .disabled:hover .card {
+	background-color: #c7c9cd;
+	color: #000;
+	border: 1px solid rgba(0,0,0,.125);
 }
 
 /* Exercise screen */
@@ -71,9 +80,22 @@
 @media (max-width: 767.98px) {
 	.exercise .card {
 		width: 100%;
-		height:100vh;
+		height: 100vh;
 		margin: 0;
+		border: none;
 	}
+}
+
+.audio-set {
+	text-align: center;
+}
+
+.audio-set .play-sound-btn {
+	margin: 20px 10px;
+	padding: 1rem 2rem;
+	color: #fff;
+	background-color: #6e5bba;
+	border-color: #6e5bba;
 }
 
 .progress-section .close {
@@ -132,19 +154,6 @@ span.ar-text {
 	float: right;
 }
 
-.exercise-check-btn, .exercise-continue-btn, .lesson-continue-btn, .startover-btn, .goback-btn {
-	border-radius: 100px;
-}
-
-.goback-btn:hover {
-	color: #fff;
-}
-
-.exercise-continue-btn, .lesson-continue-btn, .goback-btn, .exercise-check-btn:enabled {
-	background-color: #fda94f;
-	color: #fff;
-}
-
 input[type="checkbox"], input[type="radio"] {
 	display: none;
 }
@@ -200,40 +209,34 @@ input.missed-answer + label {
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.trophy {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background: #fda94f;
-    padding-top: 25px;
-    color: #fff;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.exercise-check-btn, .exercise-continue-btn, .lesson-continue-btn, .startover-btn, .goback-btn, .getstarted-btn {
+	border-radius: 100px;
 }
 
-.stats {
-	margin-bottom: 40px;
-}
-
-.card-link {
-	color: #000;
-}
-
-.card-link:hover .card {
-	border-color: #fda94f;
-	color: #000;
-}
-
-.disabled .card {
-	background-color: #c7c9cd;
-}
-
-.disabled:hover .card {
-	background-color: #c7c9cd;
-	color: #000;
-	border: 1px solid rgba(0,0,0,.125);
+.exercise-continue-btn, .lesson-continue-btn, .goback-btn, .exercise-check-btn:enabled {
+	background-color: #fda94f;
+	color: #fff;
 }
 
 .exercise-check-btn, .startover-btn {
 	background: #f0f0f0;
+}
+
+.goback-btn:hover {
+	color: #fff;
+}
+
+.trophy {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background: #fda94f;
+	padding-top: 25px;
+	color: #fff;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.stats {
+	margin-bottom: 40px;
 }
