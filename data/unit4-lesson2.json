@@ -34,7 +34,7 @@
 				}
 			],
 			"options": ["مـ", "ـمـ", "ـم", "م"],
-			"repetitions": 8
+			"repetitions": 4
 		},
 
 		{
@@ -59,7 +59,7 @@
 				}
 			],
 			"options": ["مـ", "ـمـ", "ـم", "م"],
-			"repetitions": 8
+			"repetitions": 4
 		},
 
 		{
@@ -84,7 +84,7 @@
 				}
 			],
 			"options": ["دم", "ماد", "ممر", "ومر", "ذمم"],
-			"repetitions": 8
+			"repetitions": 4
 		}
 
 	]
