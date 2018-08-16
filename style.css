@@ -8,6 +8,10 @@
 	color: #ffffff;
 }
 
+.jumbotron .display-4 {
+	font-family: "KoodakRegular";
+}
+
 .jumbotron .btn {
 	margin-top: 5rem;
 	color: #fda94f;
