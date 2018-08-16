@@ -11,6 +11,9 @@
 				}
 			],
 			"options": ["لأَلإِ", "لأُ لإِ", "لآ لأَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -23,6 +26,9 @@
 				}
 			],
 			"options": ["لأُلآ","لإِلآ", "لإِلآ", "لأَلأَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -36,6 +42,9 @@
 				}
 			],
 			"options": ["لأَ", "لآ","لأُ", "لأَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -53,6 +62,9 @@
 				}
 			],
 			"options": ["لآ", "لإِلآ", "لإِ", "لآلإِ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -66,6 +78,9 @@
 				}
 			],
 			"options": ["لأَلإِ", "لأُلآ", "لإِلآ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -93,6 +108,9 @@
 				}
 			],
 			"options": ["لأَ", "لآ", "لإِ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -120,6 +138,9 @@
 				}
 			],
 			"options": ["لإِلآ", "لأَلأُ", "لأُلآ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		}
 

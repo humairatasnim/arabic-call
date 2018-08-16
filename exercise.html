@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Scheherazade" rel="stylesheet">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
 </head>
 <body class="exercise">
 	
@@ -76,7 +78,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-
 			var lessonsArray = [];
 			var lessonCounter = 0;
 			var questionsArray = [];			
@@ -241,7 +242,20 @@
 					$('.exercise-check-btn').hide();
 					handleTapPairs();
 				}
+				if ("fonts" in questionsArray[questionCounter]) {
+					var arText = document.getElementsByClassName('ar-text');
+					for (i = 0; i < arText.length; i++) {
+						var randomFont = Math.floor(Math.random()*questionsArray[questionCounter].fonts.length);
+						arText[i].style.fontFamily = questionsArray[questionCounter].fonts[randomFont];
+						var randomSize = randomNum(questionsArray[questionCounter].minFontSize, questionsArray[questionCounter].maxFontSize) + "px";
+						arText[i].style.fontSize = randomSize;
+					};					
+				}
 				handleSelectAnswer();
+			}
+
+			function randomNum(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min;
 			}
 
 			// Render exercise score

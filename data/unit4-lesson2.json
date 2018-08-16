@@ -34,6 +34,9 @@
 				}
 			],
 			"options": ["مـ", "ـمـ", "ـم", "م"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 4
 		},
 
@@ -59,6 +62,9 @@
 				}
 			],
 			"options": ["مـ", "ـمـ", "ـم", "م"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 4
 		},
 
@@ -84,6 +90,9 @@
 				}
 			],
 			"options": ["دم", "ماد", "ممر", "ومر", "ذمم"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 4
 		}
 

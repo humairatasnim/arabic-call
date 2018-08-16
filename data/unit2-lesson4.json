@@ -10,6 +10,9 @@
 				}
 			],
 			"options": ["وُزُ", "وُوَ", "زَوِ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -35,6 +38,9 @@
 				}
 			],
 			"options": ["وَزُ", "زُوَ", "زُوُ", "وُزُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -52,6 +58,9 @@
 				}
 			],
 			"options": ["زُ", "وُزَ", "زُوِ", "وُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -79,6 +88,9 @@
 				}
 			],
 			"options": ["زَ", "وِ","زُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -106,6 +118,9 @@
 				}
 			],
 			"options": ["وُوِ", "زَوُ","زُزِ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -119,6 +134,9 @@
 				}
 			],
 			"options": ["زُ", "وِ","وُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -132,6 +150,9 @@
 				}
 			],
 			"options": ["وُزُ", "زَوُ", "وَزَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		}
 	]

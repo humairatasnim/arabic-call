@@ -46,6 +46,9 @@
 				}
 			],
 			"options": ["س", "سـ", "ـسـ", "ـس"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 12
 		}
 

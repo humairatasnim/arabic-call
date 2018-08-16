@@ -10,6 +10,9 @@
 				}
 			],
 			"options": ["دَدِ", "دُدِ", "دَدُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -36,6 +39,9 @@
 				}
 			],
 			"options": ["دَدُ", "دُدِ", "دَدُ", "دَدُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -53,6 +59,9 @@
 				}
 			],
 			"options": ["دِ", "دِدَ", "دَ ", "دَدُ "],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -80,6 +89,9 @@
 				}
 			],
 			"options": ["دَ", "دِ", "دُ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -107,6 +119,9 @@
 				}
 			],
 			"options": ["دَدَ", "دُدِ", "دِدَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -120,6 +135,9 @@
 				}
 			],
 			"options": ["دِ", "دُ", "دَ", "دَ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -133,6 +151,9 @@
 				}
 			],
 			"options": ["دَدَ", "رَرِ", "دِ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		}
 	]

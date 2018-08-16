@@ -11,6 +11,9 @@
 				}
 			],
 			"options": [".الوَلَدُ مَرْ", ".المَوْزُ مُرْ", ".الوَلَدُ أَمَامَ المَمَرْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -23,6 +26,9 @@
 				}
 			],
 			"options": [".الِوَلدُ مَرْ",".الوَالِدُ مَرْ", ".مَلَآذُ أَمَامَ المَمَرْ", ".مُرَادُ مَرْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -36,6 +42,9 @@
 				}
 			],
 			"options": [".الوَلدُ لآزَمَ الأُمْ", ".الوَالِدُ مَرْ",".الوَلدُ مَرْ", ".المَوْزُ مُرْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -50,6 +59,9 @@
 				}
 			],
 			"options": [".زَادَ المَالْ",".أَمَلُ أمَامَ الوُروْد", ".دَامَ الأَلَمْ", ".رُدِمَ المَالْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -77,6 +89,9 @@
 				}
 			],
 			"options": [".دَامَ الأَلَمْ", ".رُدِمَ دَمْ الأُمْ", ".رَدَمَ المَالُ رَمْلْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		},
 		{
@@ -104,6 +119,9 @@
 				}
 			],
 			"options": [".زَادَ أَمَلُ الأُمْ", ".المَوْلُودُ أمَلُ الأُمْ", ".المَوْلُودُ أَمَلْ"],
+			"fonts": ["Aref Ruqaa", "Scheherazade", "KoodakRegular"],
+			"minFontSize": 30,
+			"maxFontSize": 40,
 			"repetitions": 1
 		}
 
